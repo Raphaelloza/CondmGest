@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+
+             xmlns:infra="clr-namespace:CondmGest.Infrastructure" 
+             x:Class="CondmGest.App">
+
+<!-- Infra = Nombre de mi indicador; nombre del name space = namespace ; Ubicacion del instalocarot = Condmgest.Infrastructure -->
+
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <!-- Tengo un objeto en la clase Infra que es de la clase Instalocator que se llamara Locator. Es le union del MainViewModel con la LoginPage -->
+            <infra:InstanceLocator x:Key="Locator"/>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
